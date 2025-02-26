@@ -111,7 +111,7 @@ def main():
                 teleop.motors[6] -= GRANULARITY
                 print(f"Motors 5, 6 changed to {teleop.motors[5]}, {teleop.motors[6]}")
             elif key.upper() in "QWERT":
-                idx = "QWERTYU".index(key.upper())
+                idx = "QWERT".index(key.upper())
                 teleop.motors[idx] -= GRANULARITY
                 print(f"Motor {idx+1} decreased to {teleop.motors[idx]}")
             elif key.upper() == 'Y':
